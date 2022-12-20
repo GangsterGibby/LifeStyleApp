@@ -165,22 +165,10 @@
                 app:srcCompat="@drawable/welkom_terug_" />
 
             <ImageView
-                android:id="@+id/settingsImage"
-                android:layout_width="49dp"
-                android:layout_height="46dp"
-                android:contentDescription="@string/desc"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.87"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.054"
-                app:srcCompat="@drawable/icon_ionic_ios_settings" />
-
-            <ImageView
                 android:id="@+id/circkelHead"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="logOut"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.073"
@@ -288,16 +276,18 @@
 
             <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="88dp"
+                android:layout_height="21dp"
                 android:layout_marginStart="196dp"
                 android:layout_marginTop="230dp"
                 android:layout_marginEnd="143dp"
                 android:layout_marginBottom="818dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@drawable/calorie_goal" />
 
             <ImageView
@@ -330,6 +320,32 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/encounters" />
 
+            <ImageButton
+                android:id="@+id/settingsImage"
+                android:layout_width="64dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="60dp"
+                android:background="@android:color/transparent"
+                android:onClick="Settings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.898"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_ionic_ios_settings" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User#1234"
+                android:textColor="#FDFDFD"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangleWelkomTerug"
+                app:layout_constraintEnd_toEndOf="@+id/rectangleWelkomTerug"
+                app:layout_constraintStart_toStartOf="@+id/rectangleWelkomTerug"
+                app:layout_constraintTop_toTopOf="@+id/rectangleWelkomTerug" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -355,6 +371,7 @@
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="25dp"
         android:background="#7A7A7A"
+        android:onClick="toMorePage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton3"

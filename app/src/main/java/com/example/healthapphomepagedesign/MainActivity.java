@@ -2,6 +2,7 @@ package com.example.healthapphomepagedesign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -85,5 +86,20 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void Settings(View view){
+        Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
+
+    public void toMorePage(View view){
+        Intent intent = new Intent(this, MorePage.class);
+        startActivity(intent);
+    }
+
+    public void logOut(View view){
+        Intent intent = new Intent(this,StartPage.class);
+        startActivity(intent);
     }
 }

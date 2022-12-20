@@ -93,7 +93,7 @@
         app:srcCompat="@drawable/rectangle_15" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/password"
         android:layout_width="220dp"
         android:layout_height="40dp"
         android:layout_marginStart="97dp"
@@ -109,7 +109,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/username"
         android:layout_width="221dp"
         android:layout_height="45dp"
         android:layout_marginStart="97dp"
@@ -118,11 +118,26 @@
         android:layout_marginBottom="296dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wrong password or username"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.224" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
